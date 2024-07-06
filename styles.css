@@ -26,6 +26,58 @@ body {
   margin-left: 10px;
   animation: rotateLogo 4s infinite linear; /* Animation for logo rotation */
 }
+/* Media Queries */
+@media (max-width: 768px) {
+  .content h1 {
+    font-size: 48px;
+  }
+
+  .centered {
+    font-size: 36px;
+  }
+
+  .signup-form input[type="email"] {
+    font-size: 16px;
+    width: 250px;
+  }
+
+  .waitlist-button {
+    font-size: 16px;
+  }
+
+  .modal {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content h1 {
+    font-size: 32px;
+  }
+
+  .centered {
+    font-size: 24px;
+  }
+
+  .signup-form {
+    flex-direction: column;
+  }
+
+  .signup-form input[type="email"] {
+    font-size: 14px;
+    width: 200px;
+    margin-bottom: 10px;
+  }
+
+  .waitlist-button {
+    font-size: 14px;
+  }
+
+  .modal {
+    font-size: 18px;
+  }
+}
+
 
 @keyframes rotateLogo {
   from {
